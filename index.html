@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Mussadiq Ali — Senior Frontend Engineer</title>
+<meta name="description" content="Senior Frontend Engineer with 4+ years building production Vue.js and React Native at scale. I work with a small number of teams at a time, embedded for the long haul. Available for senior frontend or full-stack engagements."/>
+<meta name="author" content="Mussadiq Ali"/>
+<meta name="keywords" content="Senior Frontend Engineer, Vue.js, React, React Native, TypeScript, Full Stack, Contract, Remote, EU, Germany"/>
+
+<meta property="og:type" content="profile"/>
+<meta property="og:title" content="Mussadiq Ali — Senior Frontend Engineer"/>
+<meta property="og:description" content="4+ years shipping production Vue.js and React Native. I partner with a small number of teams at a time, embedded for the long haul."/>
+<meta property="og:image" content="profile.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Mussadiq Ali — Senior Frontend Engineer"/>
+<meta name="twitter:description" content="4+ years shipping production Vue.js and React Native. Long-term engagements, not short ones."/>
+<meta name="twitter:image" content="profile.jpg"/>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0a0a0b;--bg2:#111113;--bg3:#18181b;--border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);--text:#f0ede8;--muted:#7a7874;--accent:#c8b89a;--accent2:#e8d5b0;--green:#4caf7a;--serif:'DM Serif Display',Georgia,serif;--sans:'Instrument Sans',sans-serif;--mono:'DM Mono',monospace;--r:10px}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:#0a0a0b}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 3rem;border-bottom:1px solid var(--border);background:rgba(10,10,11,0.88);backdrop-filter:blur(16px)}
+.nav-logo{font-family:var(--mono);font-size:13px;color:var(--muted);letter-spacing:0.08em}
+.nav-logo span{color:var(--accent2)}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{font-size:13px;color:var(--muted);transition:color 0.2s;letter-spacing:0.02em}
+.nav-links a:hover{color:var(--text)}
+main{max-width:900px;margin:0 auto;padding:0 2rem}
+section{padding:5rem 0;border-bottom:1px solid var(--border)}
+section:last-child{border-bottom:none}
+#hero{padding-top:5.5rem;padding-bottom:5rem;display:grid;grid-template-columns:1fr auto;gap:4rem;align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;letter-spacing:0.1em;color:var(--green);border:1px solid rgba(76,175,122,0.22);padding:4px 10px;border-radius:4px;margin-bottom:1.4rem;text-transform:uppercase}
+.hero-tag-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.7)}}
+.hero-name{font-family:var(--serif);font-size:clamp(2.6rem,5.5vw,4.5rem);line-height:1;letter-spacing:-0.02em;margin-bottom:1.1rem}
+.hero-name em{font-style:italic;color:var(--accent2)}
+.hero-tagline{font-size:13.5px;color:var(--muted);line-height:1.9;margin-bottom:1.8rem;letter-spacing:0.02em}
+.hero-tagline strong{color:var(--text);font-weight:500}
+.hero-cta{display:flex;gap:0.75rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:0.55rem 1.1rem;font-family:var(--sans);font-size:13px;font-weight:500;border-radius:6px;transition:all 0.2s;cursor:pointer;letter-spacing:0.01em}
+.btn-primary{background:var(--accent);color:#0a0a0b;border:1px solid var(--accent)}
+.btn-primary:hover{background:var(--accent2);border-color:var(--accent2)}
+.btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--border2)}
+.btn-ghost:hover{color:var(--text);border-color:rgba(255,255,255,0.22)}
+.hero-photo-wrap{position:relative;flex-shrink:0}
+.hero-photo-frame{width:240px;height:300px;border-radius:120px 120px 20px 20px;overflow:hidden;border:1px solid var(--border2);position:relative;background:linear-gradient(160deg,#1a1815 0%,#0f0e0c 100%)}
+.hero-photo-frame img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.hero-photo-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:6rem;color:var(--accent);letter-spacing:-0.04em;position:relative}
+.hero-photo-fallback::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(200,184,154,0.12),transparent 60%)}
+.hero-photo-badge{position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);background:var(--bg2);border:1px solid var(--border2);border-radius:20px;padding:5px 12px;font-family:var(--mono);font-size:10px;color:var(--accent);letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap}
+.section-label{font-family:var(--mono);font-size:11px;letter-spacing:0.14em;color:var(--muted);text-transform:uppercase;margin-bottom:2rem;display:flex;align-items:center;gap:0.75rem}
+.section-label::after{content:'';flex:1;height:1px;background:var(--border);max-width:100px}
+.section-heading{font-family:var(--serif);font-size:2.4rem;line-height:1.1;letter-spacing:-0.02em;margin-bottom:2.5rem}
+.section-heading em{font-style:italic;color:var(--accent2)}
+.skills-section{display:flex;flex-direction:column;gap:1.5rem}
+.skills-group-label{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.5rem}
+.skills-row{display:flex;flex-wrap:wrap;gap:0.4rem}
+.skill-tag{font-family:var(--mono);font-size:12px;padding:0.35rem 0.75rem;border:1px solid var(--border2);border-radius:5px;color:var(--muted);background:var(--bg2);transition:all 0.2s}
+.skill-tag:hover{border-color:var(--accent);color:var(--accent2);background:rgba(200,184,154,0.05)}
+.partnership-intro{font-size:15px;color:var(--text);line-height:1.8;margin-bottom:2.5rem;max-width:680px}
+.partnership-intro strong{color:var(--accent2);font-weight:500}
+.partnership-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.partnership-card{border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;background:var(--bg2);transition:border-color 0.2s,background 0.2s}
+.partnership-card:hover{border-color:var(--border2);background:var(--bg3)}
+.partnership-number{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:0.1em;margin-bottom:1rem}
+.partnership-title{font-family:var(--serif);font-size:1.15rem;color:var(--text);margin-bottom:0.6rem;line-height:1.25}
+.partnership-body{font-size:13px;color:var(--muted);line-height:1.65}
+.commitment-stats{display:flex;gap:2rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--border);flex-wrap:wrap}
+.commitment-stat{flex:1;min-width:150px}
+.commitment-stat-num{font-family:var(--serif);font-size:2.2rem;color:var(--accent2);line-height:1;margin-bottom:0.35rem}
+.commitment-stat-label{font-family:var(--mono);font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;line-height:1.5}
+.exp-item{display:grid;grid-template-columns:170px 1fr;gap:2rem;padding:2rem 0;border-bottom:1px solid var(--border)}
+.exp-item:first-child{padding-top:0}
+.exp-item:last-child{border-bottom:none}
+.exp-duration{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:0.04em;margin-bottom:0.35rem;line-height:1.6}
+.exp-company{font-size:12px;color:var(--accent);letter-spacing:0.03em;font-weight:500}
+.exp-location{font-family:var(--mono);font-size:10px;color:var(--muted);opacity:0.6;margin-top:2px}
+.exp-badge{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:0.06em;padding:2px 7px;border-radius:3px;background:rgba(76,175,122,0.1);color:var(--green);border:1px solid rgba(76,175,122,0.2);margin-top:6px;text-transform:uppercase}
+.exp-title{font-family:var(--serif);font-size:1.3rem;color:var(--text);margin-bottom:0.75rem;line-height:1.2}
+.exp-points{list-style:none;display:flex;flex-direction:column;gap:0.35rem}
+.exp-points li{font-size:13.5px;color:var(--muted);padding-left:1rem;position:relative;line-height:1.6}
+.exp-points li::before{content:'—';position:absolute;left:0;color:var(--border2);font-size:11px;top:3px}
+.exp-points li strong{color:var(--text);font-weight:500}
+.projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem}
+.project-card{border:1px solid var(--border);border-radius:var(--r);padding:1.35rem;background:var(--bg2);display:flex;flex-direction:column;gap:0.6rem;transition:border-color 0.2s,background 0.2s;position:relative;overflow:hidden}
+.project-card:hover{border-color:var(--border2);background:var(--bg3)}
+.project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:0;transition:opacity 0.3s}
+.project-card:hover::before{opacity:1}
+.project-header{display:flex;justify-content:space-between;align-items:flex-start}
+.project-name{font-family:var(--serif);font-size:1.1rem;color:var(--text);line-height:1.2}
+.project-link{font-size:11px;color:var(--muted);transition:color 0.2s;flex-shrink:0;margin-left:0.5rem;margin-top:2px}
+.project-card:hover .project-link{color:var(--accent)}
+.project-tech{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:0.04em;opacity:0.8}
+.project-desc{font-size:13px;color:var(--muted);line-height:1.65}
+.project-full{grid-column:span 2}
+.testimonials-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.testimonial-card{border:1px solid var(--border);border-radius:var(--r);padding:1.75rem;background:var(--bg2);position:relative}
+.testimonial-quote{font-family:var(--serif);font-size:1.15rem;color:var(--text);line-height:1.5;margin-bottom:1.1rem;font-style:italic}
+.testimonial-quote::before{content:'"';font-size:2.5rem;color:var(--accent);position:absolute;top:0.5rem;left:1rem;line-height:1;font-family:var(--serif);opacity:0.4}
+.testimonial-attr{display:flex;align-items:center;gap:0.75rem;font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:0.04em}
+.testimonial-attr strong{color:var(--accent);font-weight:500}
+.testimonial-attr-divider{color:var(--border2)}
+.extra-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.extra-card{border:1px solid var(--border);border-radius:var(--r);padding:1.25rem;background:var(--bg2)}
+.extra-card-title{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.75rem}
+.extra-row{font-size:13.5px;color:var(--text);padding:0.3rem 0;border-bottom:1px solid var(--border);line-height:1.5}
+.extra-row:last-child{border-bottom:none}
+.extra-row span{color:var(--muted);font-size:12px;display:block}
+.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}
+.contact-headline{font-family:var(--serif);font-size:2rem;line-height:1.1;letter-spacing:-0.02em;margin-bottom:0.8rem}
+.contact-headline em{font-style:italic;color:var(--accent2)}
+.contact-body{font-size:13.5px;color:var(--muted);line-height:1.7;margin-bottom:1.5rem}
+.contact-links{display:flex;flex-direction:column;gap:0.6rem}
+.contact-link{display:flex;align-items:center;gap:0.75rem;font-size:13px;color:var(--muted);padding:0.7rem 1rem;border:1px solid var(--border);border-radius:8px;background:var(--bg2);transition:all 0.2s;cursor:pointer}
+.contact-link:hover{border-color:var(--border2);color:var(--text)}
+.contact-icon{font-family:var(--mono);font-size:12px;font-weight:500;color:var(--accent);min-width:22px;text-align:center}
+.contact-meta{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:auto;letter-spacing:0.04em;opacity:0.7}
+.avail-box{border:1px solid rgba(76,175,122,0.18);border-radius:var(--r);padding:1.5rem;background:rgba(76,175,122,0.03)}
+.avail-status{font-family:var(--mono);font-size:11px;letter-spacing:0.08em;color:var(--green);margin-bottom:0.6rem;text-transform:uppercase;display:flex;align-items:center;gap:6px}
+.avail-dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+.avail-text{font-size:13.5px;color:var(--muted);line-height:1.7}
+.avail-text strong{color:var(--text);font-weight:500}
+footer{padding:2rem 0;text-align:center;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:0.06em;opacity:0.4}
+.fade-in{opacity:0;transform:translateY(14px);transition:opacity 0.5s ease,transform 0.5s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+@media(max-width:680px){nav{padding:1rem 1.25rem}.nav-links{display:none}main{padding:0 1.25rem}#hero{grid-template-columns:1fr;padding-top:4rem;gap:2.5rem}.hero-photo-wrap{justify-self:center}.hero-photo-frame{width:180px;height:220px}.hero-photo-fallback{font-size:4.5rem}.exp-item{grid-template-columns:1fr;gap:0.4rem}.projects-grid{grid-template-columns:1fr}.project-full{grid-column:span 1}.contact-inner{grid-template-columns:1fr;gap:2rem}.extra-grid{grid-template-columns:1fr}.partnership-grid{grid-template-columns:1fr}.section-heading{font-size:1.9rem}.commitment-stats{gap:1.25rem}.commitment-stat-num{font-size:1.8rem}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><span>Mussadiq Ali</span> · Frontend Engineer</div>
+  <div class="nav-links">
+    <a href="#skills">Skills</a>
+    <a href="#approach">How I work</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+
+  <section id="hero">
+    <div class="hero-left fade-in">
+      <div class="hero-tag"><span class="hero-tag-dot"></span>Selectively taking new partnerships</div>
+      <h1 class="hero-name">Mussadiq<br><em>Ali</em></h1>
+      <p class="hero-tagline">
+        <strong>Senior Frontend Engineer</strong><br>
+        Full Stack JS / TypeScript · Vue.js · React · React Native<br>
+        I partner with a small number of teams — <strong>for years, not weeks.</strong>
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Start a conversation ↗</a>
+        <a href="#approach" class="btn btn-ghost">How I work</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap fade-in" style="transition-delay:0.12s">
+      <div class="hero-photo-frame">
+        <img src="profile.jpg" alt="Mussadiq Ali" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="hero-photo-fallback" style="display:none">MA</div>
+      </div>
+      <div class="hero-photo-badge">Senior · 4+ yrs</div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-label fade-in">01 / Skills</div>
+    <h2 class="section-heading fade-in">What I <em>build with</em></h2>
+    <div class="skills-section fade-in">
+      <div>
+        <div class="skills-group-label">Languages</div>
+        <div class="skills-row">
+          <span class="skill-tag">JavaScript (ES6+)</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+        </div>
+      </div>
+      <div>
+        <div class="skills-group-label">Frontend & Mobile</div>
+        <div class="skills-row">
+          <span class="skill-tag">Vue.js</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">React Native</span>
+          <span class="skill-tag">Next.js</span>
+        </div>
+      </div>
+      <div>
+        <div class="skills-group-label">Backend & Tooling</div>
+        <div class="skills-row">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">BFF Architecture</span>
+          <span class="skill-tag">ElasticSearch</span>
+          <span class="skill-tag">Playwright</span>
+          <span class="skill-tag">Qase</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Agile / Scrum</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="section-label fade-in">02 / Approach</div>
+    <h2 class="section-heading fade-in">How I <em>work</em></h2>
+    <p class="partnership-intro fade-in">
+      I prefer <strong>depth over breadth</strong>. I work with a small number of teams at a time, for long stretches — <strong>Kollekt for nearly 3 years</strong>, Optima Geeks for 18 months with a Junior → Engineer progression in that window. That's how I do my best work: embedded, accountable, and there long enough to understand the product as well as anyone on the team.
+    </p>
+    <div class="partnership-grid fade-in">
+      <div class="partnership-card">
+        <div class="partnership-number">01</div>
+        <div class="partnership-title">Onboard once</div>
+        <div class="partnership-body">You don't re-train a new contractor every six months. I learn the codebase, the team, the customer — then compound on that knowledge instead of resetting.</div>
+      </div>
+      <div class="partnership-card">
+        <div class="partnership-number">02</div>
+        <div class="partnership-title">Embedded ownership</div>
+        <div class="partnership-body">I treat the product like it's mine. Production bugs, architecture calls, PR reviews, on-call — not just whatever was in the ticket.</div>
+      </div>
+      <div class="partnership-card">
+        <div class="partnership-number">03</div>
+        <div class="partnership-title">Long horizon</div>
+        <div class="partnership-body">I plan and ship work that pays off over quarters — test coverage, system design, mentorship — not just whatever ships fastest this sprint.</div>
+      </div>
+    </div>
+    <div class="commitment-stats fade-in">
+      <div class="commitment-stat">
+        <div class="commitment-stat-num">~3 yrs</div>
+        <div class="commitment-stat-label">Current tenure<br>at Kollekt</div>
+      </div>
+      <div class="commitment-stat">
+        <div class="commitment-stat-num">3 →</div>
+        <div class="commitment-stat-label">Junior → Associate →<br>Engineer at Optima</div>
+      </div>
+      <div class="commitment-stat">
+        <div class="commitment-stat-num">2</div>
+        <div class="commitment-stat-label">Production apps shipped<br>end-to-end</div>
+      </div>
+      <div class="commitment-stat">
+        <div class="commitment-stat-num">MVP×</div>
+        <div class="commitment-stat-label">Recognized multiple<br>times at Kollekt</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-label fade-in">03 / Experience</div>
+    <h2 class="section-heading fade-in">Where I've <em>worked</em></h2>
+
+    <div class="exp-item fade-in">
+      <div class="exp-meta">
+        <div class="exp-duration">Jun 2023<br>Present</div>
+        <div class="exp-company">Kollekt</div>
+        <div class="exp-location">Denmark (Remote)</div>
+        <div class="exp-badge">~3 yrs</div>
+      </div>
+      <div>
+        <div class="exp-title">Senior Frontend Engineer</div>
+        <ul class="exp-points">
+          <li><strong>Long-term partner</strong> on a large-scale production SaaS — Vue.js + TypeScript, integrated into a Denmark-based team across timezones</li>
+          <li>Owner of production bug investigation and root-cause analysis — converting recurring issues into systemic fixes rather than patching</li>
+          <li>PR reviewer and quality gatekeeper across the team; raised the bar on what merges</li>
+          <li>Contributed to <strong>ElasticSearch integration</strong> in the core search architecture</li>
+          <li>Built automated test coverage with <strong>Playwright + Qase</strong> across critical user flows</li>
+          <li>Active in agile ceremonies, retros, and long-horizon system maintenance</li>
+          <li>Recognized with <strong>multiple MVP awards</strong> across the engagement</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item fade-in">
+      <div class="exp-meta">
+        <div class="exp-duration">Ongoing<br>Part-time</div>
+        <div class="exp-company">Droozi</div>
+        <div class="exp-badge">Current</div>
+      </div>
+      <div>
+        <div class="exp-title">React Native Developer</div>
+        <ul class="exp-points">
+          <li>Co-owner of a <strong>production mobile app</strong> — architecture, components, performance, release</li>
+          <li>Built a reusable component library the team extends on top of</li>
+          <li>Real-time backend integration for live data flows</li>
+          <li>Performance improvements and production release contributions</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item fade-in">
+      <div class="exp-meta">
+        <div class="exp-duration">Jan 2022<br>Jun 2023</div>
+        <div class="exp-company">Optima Geeks</div>
+        <div class="exp-location">Lahore, Pakistan</div>
+        <div class="exp-badge">18 months</div>
+      </div>
+      <div>
+        <div class="exp-title">Software Engineer</div>
+        <ul class="exp-points">
+          <li><strong>Promoted Junior → Associate → Engineer in 18 months</strong> — fastest progression cycle the team had seen</li>
+          <li>Shipped React feature work across multiple client products (Goally, ELA iCare, Cuddle Clones, others)</li>
+          <li>Worked closely with design in Figma; delivered pixel-accurate UI and partnered on iteration cycles</li>
+          <li>Production bug fixes, API integrations, and customer-facing release work</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="projects">
+    <div class="section-label fade-in">04 / Projects</div>
+    <h2 class="section-heading fade-in">Things I've <em>shipped</em></h2>
+    <div class="projects-grid">
+      <div class="project-card fade-in">
+        <div class="project-header"><div class="project-name">Kollekt</div></div>
+        <div class="project-tech">Vue.js · TypeScript · ElasticSearch · BFF</div>
+        <p class="project-desc">Production SaaS platform — senior engineering across debugging, feature development, scalable architecture, and test coverage. Nearly 3 years embedded with the team.</p>
+      </div>
+      <div class="project-card fade-in">
+        <div class="project-header">
+          <div class="project-name">Droozi</div>
+          <a href="https://droozi.com/" class="project-link" target="_blank">droozi.com ↗</a>
+        </div>
+        <div class="project-tech">React Native · TypeScript</div>
+        <p class="project-desc">Active production mobile networking app — scalable architecture, API integrations, ongoing feature development.</p>
+      </div>
+      <div class="project-card fade-in">
+        <div class="project-header">
+          <div class="project-name">ELA iCare</div>
+          <a href="https://www.ela.law/" class="project-link" target="_blank">ela.law ↗</a>
+        </div>
+        <div class="project-tech">React Native · APIs</div>
+        <p class="project-desc">Built a full production mobile app for a legal services platform from scratch — navigation, UI, API integration, cross-platform iOS / Android.</p>
+      </div>
+      <div class="project-card fade-in">
+        <div class="project-header">
+          <div class="project-name">Goally</div>
+          <a href="https://getgoally.com/" class="project-link" target="_blank">getgoally.com ↗</a>
+        </div>
+        <div class="project-tech">React Native</div>
+        <p class="project-desc">Feature development, performance optimization, UI improvements, and state-management contributions on an established app.</p>
+      </div>
+      <div class="project-card project-full fade-in">
+        <div class="project-header"><div class="project-name">Cuddle Clones Admin Portal</div></div>
+        <div class="project-tech">React</div>
+        <p class="project-desc">Internal admin dashboard — reusable UI components, data-driven interfaces, and backend API integrations for operational workflows.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="voices">
+    <div class="section-label fade-in">05 / Voices</div>
+    <h2 class="section-heading fade-in">What teammates <em>say</em></h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in">
+        <p class="testimonial-quote">[Replace this with a real quote from a Kollekt teammate or manager — 1–2 sentences about what it's been like working with you across nearly 3 years.]</p>
+        <div class="testimonial-attr">
+          <strong>Name</strong>
+          <span class="testimonial-attr-divider">·</span>
+          <span>Title, Kollekt</span>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <p class="testimonial-quote">[Replace with a quote from Optima Geeks (former manager / lead) about the Junior → Engineer progression, ownership, or specific client work — or from a Droozi stakeholder.]</p>
+        <div class="testimonial-attr">
+          <strong>Name</strong>
+          <span class="testimonial-attr-divider">·</span>
+          <span>Title, Optima Geeks / Droozi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-label fade-in">06 / Background</div>
+    <h2 class="section-heading fade-in">Education & <em>extras</em></h2>
+    <div class="extra-grid fade-in">
+      <div class="extra-card">
+        <div class="extra-card-title">Education</div>
+        <div class="extra-row">BS Computer Science<span>Superior University · 2018–2022</span></div>
+        <div class="extra-row">Internship: Optima Geeks<span>3 months · 2021</span></div>
+      </div>
+      <div class="extra-card">
+        <div class="extra-card-title">Certifications & Languages</div>
+        <div class="extra-row">PTE Academic<span>Score: 74</span></div>
+        <div class="extra-row">English<span>Professional working proficiency</span></div>
+        <div class="extra-row">Urdu<span>Native</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-label fade-in">07 / Contact</div>
+    <div class="contact-inner">
+      <div class="fade-in">
+        <h2 class="contact-headline">Let's work <em>together</em></h2>
+        <p class="contact-body">Open to senior frontend and full-stack engagements — employment or long-term contract. Remote-first, with strong preference for teams I can embed with for the long haul. Open to relocation in Europe.</p>
+        <div class="contact-links">
+          <a href="mailto:mussadiqali2@gmail.com" class="contact-link">
+            <span class="contact-icon">@</span>
+            mussadiqali2@gmail.com
+            <span class="contact-meta">Email ↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/mussadiq-ali-433329214/" class="contact-link" target="_blank">
+            <span class="contact-icon">in</span>
+            LinkedIn
+            <span class="contact-meta">Profile ↗</span>
+          </a>
+          <a href="https://github.com/MussadiqDev" class="contact-link" target="_blank">
+            <span class="contact-icon">gh</span>
+            GitHub · MussadiqDev
+            <span class="contact-meta">Code ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="avail-box fade-in" style="transition-delay:0.1s">
+        <div class="avail-status"><span class="avail-dot"></span>Currently engaged · selectively open</div>
+        <p class="avail-text">
+          Engaged with <strong>Kollekt</strong> and <strong>Droozi</strong>. Selectively open to additional <strong>long-term partnerships</strong> — senior frontend or full-stack, employment or contract.<br><br>
+          4+ years shipping Vue.js and React Native at production scale. International remote experience with Denmark-based teams. Open to relocation in <strong>Germany, Netherlands, or Denmark</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>Mussadiq Ali · mussadiqali2@gmail.com · 2026</footer>
+
+<script>
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
+},{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
